@@ -1,21 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-
+import Searchbar from './components/Searchbar';
+import Categories from './components/Categories';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello</Text>
+    <View style={styles.screen}>
       <StatusBar style="auto" />
+      <Searchbar />
+      <Categories />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  screen:{
+    paddingTop:50,
+    backgroundColor:'#87DBBF'
   },
+
+
 });
